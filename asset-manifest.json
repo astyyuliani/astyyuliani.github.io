@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e416dcf.css",
-    "main.js": "/static/js/main.a7f6713b.js",
+    "main.css": "/static/css/main.5fa1a0fe.css",
+    "main.js": "/static/js/main.607250f7.js",
     "static/media/Certification4.jpg": "/static/media/Certification4.02be7b5702078d1baeda.jpg",
     "static/media/Certification2.jpg": "/static/media/Certification2.df6cfb1ba9bb68305733.jpg",
     "static/media/Certification1.jpg": "/static/media/Certification1.2e728d3c0e65a8f0dcc0.jpg",
@@ -16,11 +16,11 @@
     "static/media/php.png": "/static/media/php.9f9262a96cb3ef98af22.png",
     "static/media/Adobe XD.png": "/static/media/Adobe XD.45ed8621c52f502b83d0.png",
     "index.html": "/index.html",
-    "main.5e416dcf.css.map": "/static/css/main.5e416dcf.css.map",
-    "main.a7f6713b.js.map": "/static/js/main.a7f6713b.js.map"
+    "main.5fa1a0fe.css.map": "/static/css/main.5fa1a0fe.css.map",
+    "main.607250f7.js.map": "/static/js/main.607250f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e416dcf.css",
-    "static/js/main.a7f6713b.js"
+    "static/css/main.5fa1a0fe.css",
+    "static/js/main.607250f7.js"
   ]
 }
