@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.66572ca6.css",
-    "main.js": "/static/js/main.5cd02f6e.js",
+    "main.js": "/static/js/main.5007fd15.js",
     "static/media/Certification4.jpg": "/static/media/Certification4.02be7b5702078d1baeda.jpg",
     "static/media/Certification2.jpg": "/static/media/Certification2.df6cfb1ba9bb68305733.jpg",
     "static/media/Certification1.jpg": "/static/media/Certification1.2e728d3c0e65a8f0dcc0.jpg",
@@ -17,10 +17,10 @@
     "static/media/Adobe XD.png": "/static/media/Adobe XD.45ed8621c52f502b83d0.png",
     "index.html": "/index.html",
     "main.66572ca6.css.map": "/static/css/main.66572ca6.css.map",
-    "main.5cd02f6e.js.map": "/static/js/main.5cd02f6e.js.map"
+    "main.5007fd15.js.map": "/static/js/main.5007fd15.js.map"
   },
   "entrypoints": [
     "static/css/main.66572ca6.css",
-    "static/js/main.5cd02f6e.js"
+    "static/js/main.5007fd15.js"
   ]
 }
