@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.66572ca6.css",
-    "main.js": "/static/js/main.847306c0.js",
-    "static/media/Certification4.jpg": "/static/media/Certification4.02be7b5702078d1baeda.jpg",
-    "static/media/Certification7.jpg": "/static/media/Certification7.c1c4bc6e7db3e8e4573a.jpg",
+    "main.js": "/static/js/main.30f95f1a.js",
+    "static/media/Certification7.jpg": "/static/media/Certification7.02be7b5702078d1baeda.jpg",
+    "static/media/Certification3.jpg": "/static/media/Certification3.7efb9e48dc7a9b515f84.jpg",
     "static/media/Certification6.jpg": "/static/media/Certification6.acea8111c86a1aea87cf.jpg",
     "static/media/Certification2.jpg": "/static/media/Certification2.df6cfb1ba9bb68305733.jpg",
     "static/media/Certification1.jpg": "/static/media/Certification1.2e728d3c0e65a8f0dcc0.jpg",
     "static/media/Certification8.jpg": "/static/media/Certification8.5e2293bb02af9e3c25d9.jpg",
     "static/media/profile.jpg": "/static/media/profile.3bdae5c64e5e216ee7af.jpg",
-    "static/media/Certification3.jpg": "/static/media/Certification3.099cdedee432fc76bbe0.jpg",
+    "static/media/Certification4.jpg": "/static/media/Certification4.099cdedee432fc76bbe0.jpg",
     "static/media/Certification5.jpg": "/static/media/Certification5.39cb18300d5fca403947.jpg",
     "static/media/project1.jpg": "/static/media/project1.e935a42d00501119fc5c.jpg",
     "static/media/project5.jpg": "/static/media/project5.03371f1ae3837b523af4.jpg",
@@ -21,10 +21,10 @@
     "static/media/Adobe XD.png": "/static/media/Adobe XD.45ed8621c52f502b83d0.png",
     "index.html": "/index.html",
     "main.66572ca6.css.map": "/static/css/main.66572ca6.css.map",
-    "main.847306c0.js.map": "/static/js/main.847306c0.js.map"
+    "main.30f95f1a.js.map": "/static/js/main.30f95f1a.js.map"
   },
   "entrypoints": [
     "static/css/main.66572ca6.css",
-    "static/js/main.847306c0.js"
+    "static/js/main.30f95f1a.js"
   ]
 }
