@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import {  socialMediaUrl } from "../Details";
+import { socialMediaUrl } from "../Details";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const { linkdein, github, instagram } = socialMediaUrl;
+
   const toggleClass = () => {
     setIsOpen(!isOpen);
   };
@@ -12,10 +13,9 @@ function Header() {
   return (
     <header className="container mx-auto md:flex justify-between py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
-       
-        <div onClick={toggleClass} className="cursor-pointer">
+        <div onClick={toggleClass} className="cursor-pointer md:hidden">
           <svg
-            className="stroke-dark-heading dark:stroke-white md:hidden"
+            className="stroke-dark-heading dark:stroke-white"
             width="25"
             height="20"
             viewBox="0 0 16 13"
@@ -23,7 +23,7 @@ function Header() {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M1.4375 1.3125H14.5625M1.4375 11.3125H14.5625H1.4375ZM1.4375 6.3125H14.5625H1.4375Z"
+              d="M1.4375 1.3125H14.5625M1.4375 11.3125H14.5625M1.4375 6.3125H14.5625"
               strokeWidth="1.875"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -31,54 +31,60 @@ function Header() {
           </svg>
         </div>
       </div>
-      <nav className={` ${!isOpen ? "hidden" : null} text-center md:flex justify-between`}>
-        <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/" onClick={toggleClass}>
-              Home
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/about" onClick={toggleClass}>
-              About
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/technologies" onClick={toggleClass}>
-              Technologies
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/projects" onClick={toggleClass}>
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            {/* <NavLink to="/contact" onClick={toggleClass}>
-              Contact
-            </NavLink> */}
-          </li>
+
+      <nav
+        className={`${
+          !isOpen ? "hidden" : ""
+        } text-center md:flex justify-between w-full md:w-auto`}
+      >
+        <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-6 md:mr-10">
+          {[
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+            { name: "Tech", path: "/technologies" },
+            { name: "Projects", path: "/projects" },
+            { name: "Certification", path: "/certification" },
+            { name: "Publication", path: "/publication" }, // 👈 DITAMBAHKAN DI SINI
+          ].map((item, index) => (
+            <li key={index} className="pb-2 md:pb-0">
+              <NavLink
+                to={item.path}
+                onClick={toggleClass}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-gray-800 dark:text-white font-semibold"
+                    : "text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+                }
+              >
+                {item.name}
+              </NavLink>
+            </li>
+          ))}
         </ul>
+
+        {/* Social Media Icons */}
         <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
+          {/* Instagram */}
           <li>
             <a href={instagram} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className="dark:fill-light-heading fill-dark-heading hover:scale-110 transition-transform duration-200"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path 
-                d="M15 0.6C7.047 0.6 0.6 7.047 0.6 15C0.6 22.953 7.047 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.047 22.953 0.6 15 0.6ZM20.4 8.7C20.947 8.7 21.4 9.153 21.4 9.7C21.4 10.247 20.947 10.7 20.4 10.7C19.853 10.7 19.4 10.247 19.4 9.7C19.4 9.153 19.853 8.7 20.4 8.7ZM15 10.2C17.65 10.2 19.8 12.35 19.8 15C19.8 17.65 17.65 19.8 15 19.8C12.35 19.8 10.2 17.65 10.2 15C10.2 12.35 12.35 10.2 15 10.2ZM15 11.7C13.29 11.7 11.7 13.29 11.7 15C11.7 16.71 13.29 18.3 15 18.3C16.71 18.3 18.3 16.71 18.3 15C18.3 13.29 16.71 11.7 15 11.7ZM22.2 22.2C21.35 23.05 20.1 23.1 15 23.1C9.9 23.1 8.65 23.05 7.8 22.2C6.95 21.35 6.9 20.1 6.9 15C6.9 9.9 6.95 8.65 7.8 7.8C8.65 6.95 9.9 6.9 15 6.9C20.1 6.9 21.35 6.95 22.2 7.8C23.05 8.65 23.1 9.9 23.1 15C23.1 20.1 23.05 21.35 22.2 22.2Z"/>
+                <path d="M15 0.6C7.047 0.6 0.6 7.047 0.6 15C0.6 22.953 7.047 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.047 22.953 0.6 15 0.6ZM20.4 8.7C20.947 8.7 21.4 9.153 21.4 9.7C21.4 10.247 20.947 10.7 20.4 10.7C19.853 10.7 19.4 10.247 19.4 9.7C19.4 9.153 19.853 8.7 20.4 8.7ZM15 10.2C17.65 10.2 19.8 12.35 19.8 15C19.8 17.65 17.65 19.8 15 19.8C12.35 19.8 10.2 17.65 10.2 15C10.2 12.35 12.35 10.2 15 10.2ZM15 11.7C13.29 11.7 11.7 13.29 11.7 15C11.7 16.71 13.29 18.3 15 18.3C16.71 18.3 18.3 16.71 18.3 15C18.3 13.29 16.71 11.7 15 11.7ZM22.2 22.2C21.35 23.05 20.1 23.1 15 23.1C9.9 23.1 8.65 23.05 7.8 22.2C6.95 21.35 6.9 20.1 6.9 15C6.9 9.9 6.95 8.65 7.8 7.8C8.65 6.95 9.9 6.9 15 6.9C20.1 6.9 21.35 6.95 22.2 7.8C23.05 8.65 23.1 9.9 23.1 15C23.1 20.1 23.05 21.35 22.2 22.2Z" />
               </svg>
             </a>
           </li>
+
+          {/* LinkedIn */}
           <li>
             <a href={linkdein} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className="dark:fill-light-heading fill-dark-heading hover:scale-110 transition-transform duration-200"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
@@ -89,10 +95,12 @@ function Header() {
               </svg>
             </a>
           </li>
+
+          {/* GitHub */}
           <li>
             <a href={github} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className="dark:fill-light-heading fill-dark-heading hover:scale-110 transition-transform duration-200"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"

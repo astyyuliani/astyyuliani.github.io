@@ -6,7 +6,7 @@ import profile from "./assets/profile.jpg";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
-import sass from "./assets/techstack/sass.png";
+import php from "./assets/techstack/php.png";
 import js from "./assets/techstack/js.png";
 import react from "./assets/techstack/react.png";
 import redux from "./assets/techstack/redux.png";
@@ -18,8 +18,9 @@ import git from "./assets/techstack/git.png";
 import npm from "./assets/techstack/npm.png";
 import postman from "./assets/techstack/postman.png";
 import figma from "./assets/techstack/figma.png";
+import adobe from "./assets/techstack/Adobe XD.png";
 
-// Porject Images
+// Project Images
 import projectImage1 from "./assets/projects/project1.jpg";
 import projectImage2 from "./assets/projects/project2.jpg";
 import projectImage3 from "./assets/projects/project3.jpg";
@@ -27,11 +28,77 @@ import projectImage4 from "./assets/projects/project4.jpg";
 import projectImage5 from "./assets/projects/project5.jpg";
 import projectImage6 from "./assets/projects/project6.jpg";
 
+// Certification
+import certification1 from "./assets/Certification/Certification1.jpg";
+import certification2 from "./assets/Certification/Certification2.jpg";
+import certification3 from "./assets/Certification/Certification3.jpg";
+import certification4 from "./assets/Certification/Certification4.jpg";
+import certification5 from "./assets/Certification/Certification5.jpg";
+import certification6 from "./assets/Certification/Certification6.jpg";
+import certification7 from "./assets/Certification/Certification7.jpg";
+import certification8 from "./assets/Certification/Certification8.jpg";
+import certification9 from "./assets/Certification/Certification11.jpg";
+import certification10 from "./assets/Certification/Certification12.jpeg";
+
+// Certification Details
+export const certificates = [
+  {
+    id: 1,
+    title: "Frontend Development",
+    image: certification1,
+  },
+   {
+    id: 2,
+    title: "Belajar Dasar UX Design",
+    image: certification2,
+  },
+   {
+    id: 3,
+    title: "From Research to insight",
+    image: certification3,
+  },
+   {
+    id: 4,
+    title: "Cloud Computing",
+    image: certification4,
+  },
+    {
+    id: 5,
+    title: "Introduction to figma",
+    image: certification5,
+  },
+    {
+    id: 6,
+    title: "Belajar SQL",
+    image: certification6,
+  },
+    {
+    id: 7,
+    title: "Belajar Mongo DB",
+    image: certification7,
+  },
+    {
+    id: 8,
+    title: "Business Analysis Basic",
+    image: certification8,
+  },
+    {
+    id: 9,
+    title: "Pengelola Kesisteman",
+    image: certification9,
+  },
+    {
+      id: 10,
+      title: "The Microsoft 365 Ecosystem",
+      image: certification10,
+    },
+
+];
 
 // Enter your Personal Details here
 export const personalDetails = {
   name: "Asty Yuliani",
-  tagline: "I build things for web",
+  tagline: "I bring ideas to life",
   img: profile,
   about: `Software Engineering student at Telkom University with a strong passion for UI/UX Design and creating impactful digital experiences. Experienced in conducting user research, designing wireframes, building interactive prototypes, and testing usability to improve interface quality. Skilled in using Figma and other design tools to translate ideas into user friendly designs that meet both user needs and business goals. Demonstrated ability to collaborate with developers and stakeholders, supported by strong communication, problem solving, and creative thinking skills.`,
 };
@@ -49,8 +116,8 @@ export const workDetails = [
     Position: "UI Designer",
     Company: `Oemah Website`,
     Location: "Purwokerto",
-    Type: "Full Time",
-    Duration: "Jul 2024 - Aug 2024",
+    Type: "Internship",
+    Duration: "Jul 2024 - Sep 2024",
   },
   {
     Position: "Front End Developer",
@@ -63,7 +130,7 @@ export const workDetails = [
     Position: "UI Designer",
     Company: `Dicoding Academy`,
     Location: "Online",
-    Type: "Internship",
+    Type: "Full Time",
     Duration: "Aug 2023 - Sep 2023",
   },
 ];
@@ -93,16 +160,47 @@ export const techStackDetails = {
   js: js,
   react: react,
   redux: redux,
-  sass: sass,
+  php:php,
   tailwind: tailwind,
   bootstrap: bootstrap,
   vscode: vscode,
   postman: postman,
   npm: npm,
   git: git,
+  adobe: adobe,
   github: github,
   figma: figma,
 };
+
+// Training Details
+export const trainingDetails = [
+  {
+    Position: "Cloud Computing",
+    Company: "Bangkit Academy By Google, GoTo & Traveloka",
+    Location: "Online",
+    Type: "Program",
+    Duration: "Aug 2023 - Jan 2024",
+  },
+  {
+    Position: "Internal Advocacy & Strategy Staff",
+    Company: "Software Engineering Student Association",
+    Location: "Purwokerto",
+    Type: "Program",
+    Duration: " Jan 2022 - Jan 2023",
+  },
+];
+
+// Publication Details
+export const publicationDetails = {
+  title: "Development of Photo Studio Reservation Website Design Using Design Thinking Method",
+  publisher: "Jurnal Penelitian Pendidikan IPA (JPPIPA), Universitas Mataram",
+  year: "2025",
+  link: "https://doi.org/10.29303/jppipa.v11i4.10909", 
+  description:
+    "This publication presents the development of a photo studio reservation website using the Design Thinking method, focusing on user experience and usability aspects.",
+};
+
+
 
 // Enter your Project Details here
 export const projectDetails = [
@@ -127,16 +225,16 @@ export const projectDetails = [
     image: projectImage3,
     description: `A mobile UI design that helps users book and manage home cleaning services easily through a user-friendly interface.`,
     designtools: "Figma, Auto Layout, Components",
-    previewLink: "https://google.com",
-    figmaLink: "https://github.com",
+    previewLink: "https://www.figma.com/proto/HY3Ehl8tMR3CQVn5xEnEwm/Resikan?page-id=0%3A1&node-id=1-2929&p=f&viewport=126%2C40%2C0.09&t=K0gYpmBfZiZy9unJ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2843",
+    figmaLink: "https://www.figma.com/design/HY3Ehl8tMR3CQVn5xEnEwm/Resikan?node-id=0-1&t=LhkmaklSfvmSmPoV-1",
   },
   {
     title: "E-Commerce Catalog – Product Display Website",
     image: projectImage4,
     description: `This is a web app that lets users browse and view product details through a responsive interface.`,
     techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    previewLink: "https://ecommerce-catalog-inky.vercel.app/",
+    githubLink: "https://github.com/astyyuliani/ecommerce-catalog",
   },
   {
     title: "MeetEat – Food Ordering App Design",
@@ -151,13 +249,7 @@ export const projectDetails = [
     image: projectImage6,
     description: `This mobile app allows users to exchange waste for rewards, promoting eco friendly habits.`,
     techstack: "Cloud Run, Cloud SQL, Cloud Storage",
-    previewLink: "https://google.com",
+    previewLink: "https://www.figma.com/proto/AFzRO5ffLXUxkCBA9Ouijf/DaurinPoin?page-id=0%3A1&node-id=109-1161&starting-point-node-id=188%3A99&t=PVFRtluHVJ9zH0wg-1",
     githubLink: "https://github.com/Capstone-DaurinPoin/Cloud-Computing",
   },
 ];
-
-// Enter your Contact Details here
-// export const contactDetails = {
-//   email: "hi@example.com",
-//   phone: "+91 12345 67890",
-// };

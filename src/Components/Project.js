@@ -10,7 +10,7 @@ function Project({
   githubLink, 
   figmaLink 
 }) {
-  // Tentukan jenis link kedua
+
   const isDesignProject = Boolean(figmaLink);
   const secondLink = isDesignProject ? figmaLink : githubLink;
   const secondLabel = isDesignProject ? "Design" : "View Code";
@@ -25,7 +25,7 @@ function Project({
 
         <p className="text-content pt-4 font-light">{description}</p>
 
-        {/* Tampilkan Tech Stack atau Design Tools */}
+       
         {techstack && (
           <h3 className="text-dark-heading dark:text-light-heading font-medium pt-4">
             Tech Stack : <span className="font-light">{techstack}</span>
@@ -71,7 +71,7 @@ function Project({
             </a>
           </div>
 
-          {/* View Code / View Design */}
+         
           <div className="flex items-center">
             <svg
               className="dark:fill-light-heading fill-dark-heading inline-block align-middle"
